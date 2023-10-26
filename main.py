@@ -1,5 +1,3 @@
-from decode_function import decode
-
 #Mia Hakkarainen
 def encode(password):
     new_password = ""
