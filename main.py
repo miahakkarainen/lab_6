@@ -7,6 +7,14 @@ def encode(password):
         new_password += str((int(password[i]) + 3) % 10)
     return new_password
 
+def decode_password(encoded_password):
+    decoded_password = ''
+    for digit in encoded_password:
+        decoded_digit = (int(digit) - 3) % 10
+        decoded_password += str(decoded_digit)
+    return decoded_password
+
+
 if __name__ == "__main__":
 
     passwords = []
