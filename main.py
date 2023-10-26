@@ -5,7 +5,7 @@ def encode(password):
         new_password += str((int(password[i]) + 3) % 10)
     return new_password
 
-def decode_password(encoded_password):
+def decode_password(encoded_password): #Steven Chen
     decoded_password = ''
     for digit in encoded_password:
         decoded_digit = (int(digit) - 3) % 10
