@@ -35,5 +35,5 @@ if __name__ == "__main__":
             print(f"Your password has been encoded and stored!")
         elif option_number == 2:
             last_encoded_password = passwords[-1]
-            last_original_password = decode(last_encoded_password)
+            last_original_password = decode_password(last_encoded_password)
             print(f"The encoded password is {last_encoded_password}, and the original password is {last_original_password}.")
